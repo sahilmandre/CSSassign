@@ -11,6 +11,7 @@ h1 {
 hr.new3 {
   border-top: 1px dotted #80007e;
   margin-top: 4em;
+  width: 120%;
 }
 
 #leftbox {
@@ -51,9 +52,10 @@ hr.new3 {
 }
 
 #rightbox {
-  float: right;
-  width: 70%;
+  float: left;
+  width: auto;
   height: 280px;
+  margin-left: 5em;
 }
 
 .author {
@@ -61,13 +63,13 @@ hr.new3 {
 }
 
 p.left-dashed {
-  width: 80%;
+  width: 120%;
   padding: 5px 5px 5px 5px;
   border: 3px dashed #000000;
 }
 
 p.right-dashed {
-  width: 80%;
+  width: 120%;
   padding: 5px 5px 5px 5px;
   text-align: right;
   border: 3px dashed #ff7f00;
@@ -76,7 +78,7 @@ p.right-dashed {
 }
 
 p.center-dotted {
-  width: 80%;
+  width: 120%;
   padding: 5px 5px 5px 5px;
   text-align: center;
   border: 2px dotted #0000ff;
