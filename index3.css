@@ -1,0 +1,75 @@
+body{
+    max-width: 800px;
+    height: 500px;
+    /* margin: 1% 10% 10% 20%; */
+    margin: 2% 0% 20% 20%;
+}
+
+
+.grid-container {
+    display: grid;
+    /* align-items:flex-start; */
+    width: 100%;
+    border: 1px solid black;
+    padding:10px 10px 10px 10px;
+    grid-template-columns: 1fr 1fr 0.8fr 1.2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Lorem-ipsum Lorem-ipsum Lorem-ipsum Lorem-ipsum"
+      "Photo-Background Photo-Background Photo-Background Man-Image"
+      "Photo-Background Photo-Background Photo-Background Man-Image";
+  }
+  
+  .Lorem-ipsum { 
+    grid-area: Lorem-ipsum; 
+    text-align:center;
+    background-color: #FF9999;
+    border: 2px solid black;
+    padding:10px 10px 10px 10px;
+    }
+
+    .Lorem-ipsum>h1{
+        font-size: 26px;
+        display: grid;
+        text-align:left;
+        margin-left: 5em;
+    }
+
+    .Lorem-ipsum>p{
+        margin-top: 25px;
+    }
+  
+  .Photo-Background { 
+    grid-area: Photo-Background; 
+    /* float: left; */
+    width: auto;
+    border: 2px solid black;
+    padding: 10px 10px 10px 10px;
+    background-color:yellow;
+
+
+    }
+    
+    .Photo-Background>img {
+        object-fit: cover;
+        width: 100%;
+        
+      }
+  
+  .Man-Image { 
+    grid-area: Man-Image; 
+    float:right;
+    width:auto;
+    border: 2px solid black;
+    background-color:#ECECFB;
+    text-align:center;
+    padding:10px 10px 10px 10px;
+
+    }
+
+  .Man-Image>img {
+    object-fit: scale-down;
+    width:70%;
+        
+  }
